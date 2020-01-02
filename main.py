@@ -24,7 +24,7 @@ while tl > 0:
     ct = random.randint(1, 10)
     while ct > 0:
         f = open("commit.txt", "a+")
-        l_date = now + datetime.timedelta(days=-pointer)
+        l_date = now + datetime.timedelta(days=+pointer)
         formatdate = l_date.strftime("%Y-%m-%d")
         f.write(f"commit ke {ctr}: {formatdate}\n")
         f.close()
