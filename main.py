@@ -1,17 +1,16 @@
 import os
 from datetime import date, time, datetime
 import datetime
+import random
 
-total_day = 1 #total days back
+total_day = 10 #total days back
 commit_frequency = 10 #commit time per day
 repo_link = "https://github.com/AlazarG19/test_repo"
 
 tl = total_day #time day
 ctr = 1
 
-now = datetime.datetime.now()
-now = now.replace(year=2021)
-print(now)
+now = datetime.datetime(2020, 1, 2)
 
 
 f = open("commit.txt", "w")
@@ -22,7 +21,7 @@ os.system("git init")
 pointer = 0
 
 while tl > 0:
-    ct = commit_frequency
+    ct = random.randint(1, 10)
     while ct > 0:
         f = open("commit.txt", "a+")
         l_date = now + datetime.timedelta(days=-pointer)
