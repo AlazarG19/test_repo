@@ -3,9 +3,9 @@ from datetime import date, time, datetime
 import datetime
 import random
 
-total_day = 10 #total days back
+total_day = 1 #total days back
 commit_frequency = 10 #commit time per day
-repo_link = "https://github.com/AlazarG19/test_repo"
+repo_link = "https://github.com/AlazarG19/test_repo.git"
 
 tl = total_day #time day
 ctr = 1
