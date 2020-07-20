@@ -2,14 +2,17 @@ import os
 from datetime import date, time, datetime
 import datetime
 
-total_day = 366 #total days back
+total_day = 1 #total days back
 commit_frequency = 10 #commit time per day
-repo_link = "https://github.com/aliifam/github-activity-generator.git"
+repo_link = "https://github.com/AlazarG19/test_repo"
 
 tl = total_day #time day
 ctr = 1
 
 now = datetime.datetime.now()
+now = now.replace(year=2020)
+print(now)
+
 
 f = open("commit.txt", "w")
 os.system("git config user.name")
